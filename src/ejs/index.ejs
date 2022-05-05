@@ -1,13 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+<% 
+ let pageMeta = {
+     title:"top",
+     css:"parts"
+     
+ }
+%>
+<%- include ('../parts/_head',{meta:pageMeta}); %>
 <%- include ('../parts/_header'); %>
 <body>
+
+
+    <div class="contents">
+        <% let ary = ['アイテム1', 'アイテム2', 'アイテム3','aいてむ4']; %>
+        <% ary.forEach(function (value, key) { %>
+            <h3>
+                <%= key %>は、<%= value %> ですよ
+            </h3>
+        <% }); %>
+
+
+
+    </div><!-- /.contents -->
+
+    <figure class="gest_effect">
+        <picture>
+            <source media="(max-width: 767px)" srcset="./assets/img/Step2_sp.png">
+            <img src="./assets/img/gest_effect_sp.png" alt="宣伝力UP! 求人効果UP! 知名度UP! 集客効果UP!">
+        </picture>
+
+    </figure>
+
     
 </body>
 </html>
