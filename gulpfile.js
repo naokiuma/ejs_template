@@ -2,6 +2,12 @@ const gulp = require("gulp");
 var ejs = require("gulp-ejs");
 var rename = require("gulp-rename");
 
+
+gulp.task( "default", function () {
+    gulp.watch( "src/ejs/**/*.ejs", gulp.series( "ejs" ) ); // ejsディレクトリ以下の.ejsファイルの更新を監視
+});
+
+
 //EJS(テンプレートエンジン)
 gulp.task("ejs", function(done) {
     gulp.src(
@@ -15,5 +21,8 @@ gulp.task("ejs", function(done) {
 
     done();
 });
+
+
+
 
 

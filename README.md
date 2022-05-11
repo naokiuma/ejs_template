@@ -6,7 +6,9 @@
 https://qiita.com/y_hokkey/items/31f1daa6cecb5f4ea4c9#%E3%83%AB%E3%83%BC%E3%83%97
 
 -- コマンド<br>
-gulp ejs コンパイル
+gulp ejs コンパイル <br>
+gulp のみ　defaultが走る。これでwatchをするので、変更があったときにejsを走らせられるようになった<br>
+https://qiita.com/shin1kt/items/85f218e086cb8e916dd1
 
 <br>
 
